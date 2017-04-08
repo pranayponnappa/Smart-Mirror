@@ -1,0 +1,11 @@
+/*Make the followinh changes in autostart file
+Autostart file location: /home/pi/lxsession/LXDE-pi/autostart*/
+sudo python3 /home/pi/Desktop/iot-mqtt-subscriber.py &
+sudo python3 /home/pi/Desktop/iot-mqtt-publisher.py &
+
+@xset s off
+@xset -dpms
+@xset s noblank
+@unclutter &
+@matchbox-window-manager -use titlebar  &
+@midori -e Fullscren -a file:///home/pi/index.html

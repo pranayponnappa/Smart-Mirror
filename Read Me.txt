@@ -1,0 +1,26 @@
+This Directory contains three folders 
+
+1. AWS files:
+******************
+
+This folder will have 2 two files
+
+a.) iot-mqtt-publisher.py
+b.) iot-mqtt-subscriber.py
+
+These files contains the code to establish communication between the raspberry pi and the Amazon AWS IoT. The programs would capture the output of the PIR sensor used in this project and publish it to the Motion-Sensor table created in the Dynamo DB in the cloud.
+
+2. Python files:
+***************
+
+This folder has got files named pirdisplay.py and camcorder.py which has the python code to enable the sensor and switch on/pff display and capture an image respectively. The code is programed in such a way that on detection of any motion, the display is switched on.
+
+3. Web files:
+***************
+
+The Webpage is very basic consists of 3 parts, a date and time part, weather part and news feed part.
+
+4. Autostart file:
+****************
+
+This file consists of all the codes that need to run on startup.

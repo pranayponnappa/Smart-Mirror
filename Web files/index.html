@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <style>
+            body    {
+            background-color: black;
+            }
+        </style>
+        <script>
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML =
+                h + ":" + m + ":" + s;
+                var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                return i;
+            }
+        </script>
+    </head>
+    <body onload="statTime()">
+        <br>
+        <!--Time widget-->
+        <div>
+            <div style="float: left;">
+
+            <a href="http://time.is/Tewksbury" id="time_is_link" rel="nofollow" style="font-size:20px;color:white;background:black; font-family: Helvetica;"></a>
+            <span id="Tewksbury_z161" style="font-size:40px;color:white;background:black;font-family:Helvetica;"></span>
+            <script src="http://widget.time.is/en.js"></script>
+            <script>
+                time_is_widget.init({Tewksbury_z161:{template:"TIME<br>DATE<br>SUN", time_format:"12hours:minutes:secondsAMPM", date_format:"dayname, monthname dnum, year", sun_format:"Sunrise: srhour:srminute Sunset: sshour:ssminute", coords:"42.6106500,-71.2342200"}});
+            </script>
+            <!--<div style="margin: 15px 0px 0px; display: inline-block; text-align: center; width: 392px;"><noscript><div style="display: inline-block; padding: 2px 4px; margin: 0px 0px 5px; border: 1px solid rgb(204, 204, 204); text-align: center; background-color: rgb(0, 0, 0);"><a style="text-decoration: none; font-size: 13px; color: rgb(255, 255, 255);" href="http://localtimes.info/North_America/United_States/Massachusetts/Lowell/"><img src="http://localtimes.info/images/countries/us.png"="" border=0="" style="border:0;margin:0;padding:0"=""> Lowell</a></div></noscript><script src="http://localtimes.info/clock.php?continent=North America&country=United States&province=Massachusetts&city=Lowell&cp1_Hex=ffffff&cp2_Hex=000000&cp3_Hex=000000&fwdt=392&ham=0&hbg=0&hfg=0&sid=0&mon=1&wek=0&wkf=0&sep=0&widget_number=1000" type="text/javascript"></script></div>-->
+            </div>
+    
+    
+       <!-- <div style="float: right; width: 30%;"><a href="https://www.booked.net/weather/boston-60"><img src="https://w.bookcdn.com/weather/picture/32_60_1_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_3.png?scode=124&domid=w209" /></a></div>
+   </div>   -->
+        <!--Weather widget-->
+      <!--  <div style="float: right; width: 30%;">
+<script language="JavaScript" type="text/javascript"> 
+ document.write('<script language="JavaScript" src="http://www.worldweatheronline.com/widget/v4/weather-widget.ashx?q=Black+Wolf%2c+United+States+of+America&width=220&custom_header=Black Wolf, United States of America&num_of_day=0&title_bg_color=000000&title_text_color=f0f0f0&widget_bg_color=000000&widget_text_color=F0F0F0&type=js&icon=1&cb=' + Math.random() + '" type="text/javascript"><\/scr' + 'ipt>');
+ </script><noscript><a href="http://www.worldweatheronline.com" alt="Black Wolf, United States of America weather">7 day Black Wolf, United States of America weather</a> provided by <a href="http://www.worldweatheronline.com">World Weather Online</a></noscript>
+        </div>-->
+   <!--News widget-->
+      <div style="float: right;"> 
+        <br><br>
+      <!-- start feedwind code --><script type="text/javascript">document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "http://rss.nytimes.com/services/xml/rss/nyt/Technology.xml|http://rss.nytimes.com/services/xml/rss/nyt/US.xml|http://rss.nytimes.com/services/xml/rss/nyt/Sports.xml",rssmikle_frame_width: "300",rssmikle_frame_height: "400",frame_height_by_article: "3",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "24",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "on",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_title: "on",rssmikle_title_sentence: "News and Events",rssmikle_title_link: "http://www.nytimes.com",rssmikle_title_bgcolor: "#000000",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#000000",rssmikle_item_bgimage: "",rssmikle_item_title_length: "200",rssmikle_item_title_color: "#FFFFFF",rssmikle_item_border_bottom: "off",rssmikle_item_description: "title_only",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#FFFFFF",rssmikle_item_date: "off",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M %p",item_description_style: "text+tn",item_thumbnail: "full",item_thumbnail_selection: "auto",article_num: "150",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; width:200px;"><!--Please display the above link in your web page according to Terms of Service.--></div><!-- end feedwind code --><!--  end  feedwind code -->g to Terms of Service.--></div><!-- end feedwind code --><!--  end  feedwind code -->
+    <!--<div class="feedgrabbr_widget" id="fgid_01746042f53a5b4b841aadc76"></div>
+<script> if (typeof(fg_widgets)==="undefined") fg_widgets = new Array();fg_widgets.push("fgid_01746042f53a5b4b841aadc76");</script>
+<script src="http://www.feedgrabbr.com/widget/fgwidget.js"></script>-->
+    </div>
+    <div style="float: left;">
+    <script src="//www.powr.io/powr.js" external-type="html"></script> 
+    <div class="powr-weather" id="8339724d_1461432960"></div>
+    </div>
+   <!-- <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=42.3583&lon=-71.0603&name=Downtown Boston&color=#00aaff&font=Georgia&units=uk"> </iframe> 
+    
+      <div id="plemx-root"></div> 
+  <a href="http://www.theweathernetwork.com">The Weather Network</a>
+  <script type="text/javascript"> 
+
+  var _plm = _plm || [];
+  _plm.push(['_btn', 28174]); 
+  _plm.push(['_loc','usma0223']);
+  _plm.push(['location', document.location.host ]);
+
+  (function(d,e,i) {
+  if (d.getElementById(i)) return;
+  var px = d.createElement(e);
+  px.type = 'text/javascript';
+  px.async = true;
+  px.id = i;
+  px.src = ('https:' == d.location.protocol ? 'https:' : 'http:') + '//widget.twnmm.com/js/btn/pelm.js?orig=en_ca';
+  var s = d.getElementsByTagName('script')[0];
+
+  var py = d.createElement('link');
+  py.rel = 'stylesheet'
+  py.href = ('https:' == d.location.protocol ? 'https:' : 'http:') + '//widget.twnmm.com/styles/btn/styles.css'
+
+  s.parentNode.insertBefore(px, s);
+  s.parentNode.insertBefore(py, s);
+})(document, 'script', 'plmxbtn');</script>-->
+
+</body>
+</html>
